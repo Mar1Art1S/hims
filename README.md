@@ -3,9 +3,9 @@
 ## Встановленн
 
 git clone https://github.com/voltexman/himpost.local.git
-composer install
-yarn install
-yarn build
+**composer install**
+**yarn install**
+**yarn build**
 
 php artisan migrate
 php artisan make:filament-user
