@@ -1,6 +1,6 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-### Встановлення
+## Встановленн
 
 composer install
 yarn install
@@ -14,7 +14,7 @@ php artisan make:filament-user
 php artisan db:seed
 Для наповнення бази даних тестовими даними
 
-### Використання іконок
+## Використання іконок
 
 Компонент іконок використовується Lucide
 mallardduck/blade-lucide-icons
