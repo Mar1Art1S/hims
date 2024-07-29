@@ -5,6 +5,7 @@
 composer install
 yarn install
 yarn build
+
 php artisan migrate
 php artisan make:filament-user
 Вказати будь-які дані користувача (пошту вказати ту, якою потрібно буде авторизовуватись для входу в панель керування)
@@ -18,7 +19,7 @@ php artisan db:seed
 Компонент іконок використовується Lucide
 mallardduck/blade-lucide-icons
 
-Сайт для вибору https://lucide.dev
+**Сайт для вибору https://lucide.dev**
 
 Щоб викликати потрібну іконку необхідно зайти на вищевказаний сайт та обрати назву потрібної іконки.
-Потім в шаблоні викликати: <x-lucide-назва-іконки class="size-5" />
+Потім в шаблоні викликати: **<x-lucide-назва-іконки class="size-5" />**
