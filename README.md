@@ -3,15 +3,11 @@
 ### Встановлення
 
 composer install
-
 yarn install
-
 yarn build
 
 php artisan migrate
-
 php artisan make:filament-user
-
 Вказати будь-які дані користувача (пошту вказати ту, якою потрібно буде авторизовуватись для входу в панель керування)
 
 За необхідністю виконати:
