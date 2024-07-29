@@ -7,12 +7,12 @@ composer install
 yarn install  
 yarn build  
 
-php artisan migrate
-php artisan make:filament-user
+php artisan migrate  
+php artisan make:filament-user  
 Вказати будь-які дані користувача (пошту вказати ту, якою потрібно буде авторизовуватись для входу в панель керування)
 
-За необхідністю виконати:
-php artisan db:seed
+За необхідністю виконати:  
+php artisan db:seed  
 Для наповнення бази даних тестовими даними
 
 ## Використання іконок
