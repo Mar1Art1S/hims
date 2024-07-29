@@ -2,6 +2,7 @@
 
 ## Встановленн
 
+git clone https://github.com/voltexman/himpost.local.git
 composer install
 yarn install
 yarn build
