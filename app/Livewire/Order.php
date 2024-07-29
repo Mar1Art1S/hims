@@ -2,8 +2,10 @@
 
 namespace App\Livewire;
 
-use App\Livewire\Forms\OrderForm;
 use Livewire\Component;
+use App\Livewire\Forms\OrderForm;
+use App\Mail\OrderShipped;
+use Illuminate\Support\Facades\Mail;
 
 class Order extends Component
 {
@@ -15,7 +17,14 @@ class Order extends Component
     {
         $this->order->store($this->product);
 
+        $this->sendToMail();
+
         session()->flash('order-success');
+    }
+
+    public function sendToMail(): void
+    {
+        Mail::to(env('ADMIN_EMAIL'))->send(new OrderShipped($this->order->all()));
     }
 
     public function render()
