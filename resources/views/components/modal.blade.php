@@ -19,7 +19,7 @@
                     <h3 class="text-lg font-semibold">
                         {{ $title }}
                         @isset($product)
-                            <div class="inline-block uppercase">{{ $product['name'] }}</div>
+                        <div class="inline-block uppercase">{{ $product['name'] }}</div>
                         @endisset
                     </h3>
                     <button @click="modalOpen=false"

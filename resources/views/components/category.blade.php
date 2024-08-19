@@ -1,32 +1,27 @@
-@props(['animation', 'image', 'title', 'description', 'color', 'link'])
+@props(['image', 'title', 'description', 'link'])
 
-<div class="relative group">
-    <div class="group-hover:hidden">
-        <img class="object-cover" src="{{ $image }}" alt="" />
-        <div class="absolute top-0 z-20 bg-slate-500/80">
-            <h3 class="z-20 px-5 py-3 text-3xl font-semibold leading-10 text-white uppercase">
-                {{ $title }}
-            </h3>
-        </div>
+<x-decor.flip>
 
-        <div class="absolute flex items-center justify-center lg:hidden bottom-5 right-5 size-12 bg-slate-500/50">
-            <x-lucide-pointer class="text-white size-5" />
-        </div>
+    <div class="relative front">
+        <img class="absolute" src="{{ $image }}" alt="" />
+        <h3
+            class="absolute pl-5 leading-[40px] text-3xl font-r900 bg-slate-800 bg-opacity-50 w-[400px] h-[400px] uppercase lf:w-[300px] lf:h-[300px] lf:text-2xl">
+            {{ $title }}
+        </h3>
     </div>
-
-    <div class="absolute inset-0 hidden bg-gray-700 group-hover:block">
-        <h4 class="px-5 pt-5 text-2xl leading-7 text-gray-200 uppercase">
+    <div class="back">
+        <h4 class="pt-5 text-1.5xl leading-[28px] font-r700 text-center">
             {{ $title }}
         </h4>
-        <p class="p-5 text-gray-200">
+        <p class="pt-10 pb-10 text-1.5xl font-r400 m-2  leading-[24px] text-center">
             {{ $description }}
         </p>
-        <div class="flex items-center justify-center mt-5">
-            <a href="{{ $link }}">
-                <x-button>
-                    {{ __('Далі') }}
-                </x-button>
+        <div class="flex items-center justify-center">
+            <a class="inline-block px-12 py-3 text-sm font-r400 text-white border border-white rounded bg-amber-400 hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-white"
+               href="{{ $link }}">
+                {{ __('Далі') }}
             </a>
         </div>
     </div>
-</div>
+
+</x-decor.flip>

@@ -8,12 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Product extends Model
 {
-    use HasFactory;
-
-    protected $fillable = ['name', 'category', 'options'];
+    protected $fillable = ['name', 'category', 'options', 'tds_file', 'tex_doc_file'];
 
     protected $casts = [
-        'options' => 'json',
         'category' => CategoryEnum::class,
+        'options' => 'json',
     ];
 }

@@ -3,10 +3,8 @@
         <div class="p-4 md:p-12 lg:px-16 lg:py-16">
             <div class="flex flex-col justify-center w-full text-center">
                 <x-lucide-smile class="mx-auto mb-5 text-amber-500 size-20" />
-                <span class="text-xl text-gray-800 font-r700">Дякуємо</span>
-                <span class="text-xl text-gray-800 font-r700">
-                    Підписка успішно оформлена
-                </span>
+                <span class="text-xl text-gray-800 font-r700">{{ __('Дякуємо') }} </span>
+                <span class="text-xl text-gray-800 font-r700">{{__('Підписка успішно оформлена')}}</span>
             </div>
         </div>
     @else
@@ -17,9 +15,9 @@
                 </h2>
             </div>
 
-            <div class="max-w-xl mx-auto mt-4">
-                <form wire:submit='save' class="sm:flex sm:gap-4 sm:flex-col">
-                    <div class="sm:flex-1">
+            <div class="max-w-3xl mx-auto  mt-4">
+                <form wire:submit='save' class="sm:flex sm:gap-4 sm:flex-col flex ">
+                    <div class="sm:flex-1 w-3/4 px-5">
                         <label class="sr-only">Email</label>
                         <x-input placeholder="Вкажіть Email" wire:model='form.email' />
 
@@ -28,7 +26,7 @@
                         @enderror
                     </div>
 
-                    <x-button type="submit" class="w-full mt-3 border-none lg:mt-0" wire:target='save'
+                    <x-button type="submit" class="inline-flex text-white border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded items-center" wire:target='save'
                         wire:loading.attr='disabled'>
                         <span class="text-sm font-r500">{{ __('Підписатися') }}</span>
                         <x-lucide-move-right class="inline-block size-6 ms-2" wire:loading.class='hidden' />

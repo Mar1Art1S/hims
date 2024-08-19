@@ -51,28 +51,6 @@
         font-weight: 900;
         font-style: normal;
     }
-
-    /* .desktop-menu__nav {
-        @apply inline-flex my-5 ml-16 md:mt-3 sm:hidden sm:ml-0;
-    }
-    .desktop-menu__ul {
-        @apply flex flex-wrap items-end justify-end gap-12 mr-10 sm:mr-0;
-    }
-
-    .desktop-menu__a {
-        @apply text-xl text-center text-white uppercase font-r300 hover:text-amber-500 md:text-base;
-    }
-
-    .mobile-menu__nav {
-        @apply sm:fixed sm:hidden sm:left-0 sm:top-16 sm:right-0 sm:bottom-0 sm:bg-blue-800 sm:justify-center sm:items-center
-    sm:w-full sm:z-[500];
-    }
-    .mobile-menu__ul {
-        @apply gap-8 sm:flex-col sm:flex sm:items-center sm:fixed;
-    }
-    .mobile-menu__a {
-        @apply sm:text-5xl sm:text-white sm:font-r300;
-    } */
 }
 
 .flip {
@@ -124,7 +102,7 @@
 .flip {
     position: relative;
     display: inline-block;
-    /* width: 400px; */
+    width: 400px;
     > .front,
     > .back {
         display: block;
@@ -133,7 +111,7 @@
         background-size: cover !important;
         background-position: center !important;
         height: 400px;
-        /* background: #3f3f46; */
+        background: #3f3f46;
         p {
             color: #999;
         }
@@ -141,8 +119,8 @@
 }
 @media screen and (max-width: 1660px) {
     .flip {
-        /* width: 300px; */
-        /* height: 300px; */
+        width: 300px;
+        height: 300px;
         > .front,
         > .back {
             height: 300px;

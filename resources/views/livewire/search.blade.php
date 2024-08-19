@@ -1,5 +1,5 @@
-<div class="max-w-md py-3 mx-auto">
-    <form wire:submit='search'>
+<div class="w-full h-12 mb-16 bg-amber-400">
+    {{-- <form wire:submit='search'>
         <label for="default-search" class="mb-2 text-sm text-gray-100 sr-only font-r500">{{ __('Пошук') }}</label>
 
         <div class="relative">
@@ -10,5 +10,5 @@
                 {{ __('Пошук') }}
             </x-button>
         </div>
-    </form>
+    </form> --}}
 </div>

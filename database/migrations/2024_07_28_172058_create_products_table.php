@@ -15,9 +15,13 @@ return new class extends Migration
         Schema::create('products', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->enum('category', CategoryEnum::all());
+            $table->enum('category', array_map(fn($case) => $case->value, CategoryEnum::cases()));
             $table->json('options');
+            $table->string('tds_file')->nullable();
+            $table->string('tex_doc_file')->nullable();
+
             $table->timestamps();
+
         });
     }
 
@@ -29,3 +33,4 @@ return new class extends Migration
         Schema::dropIfExists('products');
     }
 };
+
