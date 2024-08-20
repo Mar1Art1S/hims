@@ -10,7 +10,7 @@ class SubscribeForm extends Form
 {
     #[Validate('required', message: 'Необхідно вказати пошту')]
     #[Validate('email', message: 'Вкажіть пошту коректно')]
-    #[Validate('unique', message: 'Пошта вже зареєстрована')]
+    #[Validate('unique:subscribes,email', message: 'Пошта вже зареєстрована')]
     #[Validate('min:10', message: 'Занадто мало вказано символів.')]
     #[Validate('max:60', message: 'Вказано забагато символів.')]
     public $email = '';
