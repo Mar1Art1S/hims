@@ -3,7 +3,7 @@
 @section('content')
     <x-section class="my-0 bg-amber-400">
         <x-decor.fon/>
-        </div>
+        <div>
         <div class="relative z-20 flex flex-col items-center justify-center">
             <div
                 class="absolute flex flex-row justify-center items-center -top-[600px] lf:-top-[480px] md:flex-col rg:-top-[350px] tg:-top-[280px] md:-top-[720px] sm:-top-[620px] sf:-top-[520px] xs:-top-[480px]">
@@ -51,12 +51,12 @@
         </x-slot>
 
         <div class="grid grid-cols-6 fg:grid-cols-2 gap-x-8">
-            <x-why-us image="{{ asset('img/4_icon/1.svg') }}" title="{{ __('Рішення будь-якого завдання') }}"/>
-            <x-why-us image="{{ asset('img/4_icon/2.svg') }}" title="{{ __('Перевірені матеріали') }}"/>
-            <x-why-us image="{{ asset('img/4_icon/3.svg') }}" title="{{ __('Швидкість виконання') }}"/>
-            <x-why-us image="{{ asset('img/4_icon/4.svg') }}" title="{{ __('Нестандартні рішення') }}"/>
-            <x-why-us image="{{ asset('img/4_icon/5.svg') }}" title="{{ __('Сучасне виробництво') }}"/>
-            <x-why-us image="{{ asset('img/4_icon/6.svg') }}" title="{{ __('Гарантія якості') }}"/>
+            <x-why-us image="{{ Vite::asset('resources/img/4_icon/1.svg') }}" title="{{ __('Рішення будь-якого завдання') }}"/>
+            <x-why-us image="{{ Vite::asset('resources/img/4_icon/2.svg') }}" title="{{ __('Перевірені матеріали') }}"/>
+            <x-why-us image="{{ Vite::asset('resources/img/4_icon/3.svg') }}" title="{{ __('Швидкість виконання') }}"/>
+            <x-why-us image="{{ Vite::asset('resources/img/4_icon/4.svg') }}" title="{{ __('Нестандартні рішення') }}"/>
+            <x-why-us image="{{ Vite::asset('resources/img/4_icon/5.svg') }}" title="{{ __('Сучасне виробництво') }}"/>
+            <x-why-us image="{{ Vite::asset('resources/img/4_icon/6.svg') }}" title="{{ __('Гарантія якості') }}"/>
         </div>
     </x-section>
 
@@ -65,49 +65,49 @@
             <x-category
                 title=" {{ __('СИРОВИНА ДЛЯ ПІНОПОЛІУРЕТАНА') }}"
                 description="{{ __('Сировина для пінополіуретана складається з двох компонентів – поліолу та ізоцианату. Ми виробляємо сировину для жорстких пін.') }}"
-                image="{{ asset('img/categories/001.jpg') }}"
+                image="{{ Vite::asset('resources/img/categories/001.jpg') }}"
                 link="{{ route('ppy_serovine')
             }}"
             />
             <x-category
                 title="{{ __('СИРОВИНА ДЛЯ ПОЛІУРЕТАНУ') }}"
                 description="{{ __('Сировина для поліуретану, яка включає поліолі та ізоціанати, широко використовується у виробництві поліуретанових...') }}"
-                image="{{ asset('img/categories/002.jpg') }}"
+                image="{{ Vite::asset('resources/img/categories/002.jpg') }}"
                 link="{{ route('py_serovine')
             }}"
             />
             <x-category
                 title="{{ __('СИРОВИНА ДЛЯ ПОЛІУРЕТАНОВОГО КАМ`ЯНОГО КИЛИМА') }}"
                 description="{{ __('Сировина для поліуретанового кам`яного килима включає в себе поліуретанові смоли, наповнювачі (такі як камінь, пісок або ...') }} "
-                image="{{ asset('img/categories/003.jpg') }}"
+                image="{{ Vite::asset('resources/img/categories/003.jpg') }}"
                 link="{{ route('py_kilima')
             }}"
             />
             <x-category
                 title="{{ __('ПОЛІУРЕТАНОВІ КЛЕЇ') }}"
                 description="{{ __('Поліуретанові клеї широко використовуються в різних галузях промисловості та ремонту. Вони є дуже міцними та мають широкий спектр застосувань завдяки своїм...') }}"
-                image="{{ asset('img/categories/004.jpg') }}"
+                image="{{ Vite::asset('resources/img/categories/004.jpg') }}"
                 link="{{ route('py_klei')
             }}"
             />
             <x-category
                 title="{{ __('СИРОВИНА ДЛЯ ЛАКОФАРБОВОЇ ПРОМИСЛОВОСТІ') }}"
                 description="{{ __('Сировина для лакофарбової промисловості включає в себе різноманітні компоненти, необхідні для виробництва фарб, лаків та покриттів.') }}"
-                image="{{ asset('img/categories/007.jpg') }}"
+                image="{{ Vite::asset('resources/img/categories/007.jpg') }}"
                 link="{{ route('py_lak_prom')
             }}"
             />
             <x-category
                 title="ВИРОБИ З ЛИВАРНОГО ПОЛІУРЕТАНУ"
                 description="{{ __('Вироби з ливарного поліуретану широко застосовуються в різних галузях через їхню високу міцність, легкість та') }}"
-                image="{{ asset('img/categories/012.jpg') }}"
+                image="{{ Vite::asset('resources/img/categories/012.jpg') }}"
                 link="{{ route('py_pol')
             }}"
             />
             <x-category
                 title="{{ __('ЕФЕКТ МОКРОГО КАМЕНЮ') }}"
                 description="{{ __('Сировина для поліуретанового ефекту мокрого каменю включає в себе поліуретанові смоли, спеціальні наповнювачі, пігменти для створення') }}"
-                image="{{ asset('img/mat_3/2.jpg') }}"
+                image="{{ Vite::asset('resources/img/mat_3/2.jpg') }}"
                 link="{{ route('py_emk')}}"
             />
         </x-decor.card>

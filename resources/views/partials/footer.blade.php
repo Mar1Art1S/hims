@@ -1,11 +1,11 @@
 <footer class="grid grid-cols-3">
     <div class="relative block">
-        <img src="{{ asset('img/footer.jpg') }}" class="object-cover w-[680px] h-[420px]" alt="" />
+        <img src="{{ Vite::asset('resources/img/footer.jpg') }}" class="object-cover w-[680px] h-[420px]" alt="" />
     </div>
     <div class="col-span-3 lg:col-span-2">
         <div class="w-full bg-blue-800 max-h-32 lg:col-span-1 md:max-h-32 md:w-full">
             <a href="{{ route('main') }}">
-                <img class="object-contain w-[400px] mx-auto" src="{{ asset('img/2_logo/Logo.png') }}" alt="Logo" />
+                <img class="object-contain w-[400px] mx-auto" src="{{ Vite::asset('resources/img/2_logo/Logo.png') }}" alt="Logo" />
             </a>
         </div>
         <div class="grid grid-cols-2 gap-8">

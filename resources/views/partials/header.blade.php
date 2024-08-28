@@ -5,7 +5,7 @@
             {{-- Logo --}}
             <div class="flex items-center flex-shrink-0">
                 <a href="{{ route('main') }}" class="block">
-                    <img class="object-contain h-[130px]" src="{{ asset('img/2_logo/Logo.png') }}" alt="Логотип" />
+                    <img class="object-contain h-[130px]" src="{{ Vite::asset('resources/img/2_logo/Logo.png') }}" alt="Логотип" />
                 </a>
             </div>
 
@@ -23,8 +23,8 @@
                             <x-menu.item :link="route('contact')" :active="request()->routeIs('contact')">
                                 {{ __('Контакти') }}
                             </x-menu.item>
-                            <x-menu.item :link="route('gallery')" :active="request()->routeIs('gallery')">
-                                {{ __('Галерея') }}
+                            <x-menu.item :link="route('blogs')" :active="request()->routeIs('blogs')">
+                                {{ __('Блог') }}
                             </x-menu.item>
                         </x-menu>
                     </div>
@@ -58,8 +58,8 @@
                     <x-menu.item :link="route('contact')" :active="request()->routeIs('contact')">
                         {{ __('Контакти') }}
                     </x-menu.item>
-                    <x-menu.item :link="route('gallery')" :active="request()->routeIs('gallery')">
-                        {{ __('Галерея') }}
+                    <x-menu.item :link="route('blogs')" :active="request()->routeIs('blogs')">
+                        {{ __('Блог') }}
                     </x-menu.item>
                 </x-menu>
             </div>

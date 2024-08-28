@@ -19,8 +19,8 @@ class MainController extends Controller
         return view('contact');
     }
 
-    public function gallery()
+    public function blogs()
     {
-        return view('gallery');
+        return view('blogs');
     }
 }
