@@ -14,7 +14,7 @@
     <meta property="og:description" content="@yield('og_description', 'Default OG Description')">
     <meta property="og:image" content="@yield('og_image', asset('default-image.jpg'))">
 
-    @vite(['resources/css/app.css', '/resources/js/app.js'])
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 
 <body>
