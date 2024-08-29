@@ -43,6 +43,9 @@
             <tr>
                 <td>Замовлений товар: {{ $order['product'] }}</td>
             </tr>
+            <tr>
+                <td>Опис: {{ $order['description'] }}</td>
+            </tr>
         </tbody>
     </table>
 </body>

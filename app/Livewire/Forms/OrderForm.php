@@ -25,12 +25,14 @@ class OrderForm extends Form
 
     public $product;
 
-    public function store(string $product)
+    public function store()
     {
+        $this->product = $this->product ?? 'Задайте запитання';
         $this->validate();
-
-        $this->product = $product;
 
         Order::create($this->all());
     }
 }
+
+
+

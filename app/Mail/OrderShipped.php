@@ -30,7 +30,7 @@ class OrderShipped extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: env('APP_NAME') . " - Нове замовлення",
+            subject: env('APP_NAME') . " - Новий лист",
             from: new Address(env('MAIL_FROM_ADDRESS'))
         );
     }
@@ -43,7 +43,7 @@ class OrderShipped extends Mailable
         return new Content(
             view: 'mail.order',
             with: [
-                'title' => "Нове замовлення",
+                'title' => "Новий лист",
                 'order' => $this->order,
             ]
         );
