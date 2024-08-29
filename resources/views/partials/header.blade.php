@@ -1,11 +1,12 @@
 <header>
     <nav x-data="{ open: false }" class="duration-500 bg-blue-800">
-        <div class="relative flex items-center justify-between h-32 mx-5 containe">
+        <div class="relative flex items-center justify-between h-32 mx-5 containe xs:h-[70px]">
 
             {{-- Logo --}}
             <div class="flex items-center flex-shrink-0">
                 <a href="{{ route('main') }}" class="block">
-                    <img class="object-contain h-[130px]" src="{{ Vite::asset('resources/img/2_logo/Logo.png') }}" alt="Логотип" />
+                    <img class="object-contain h-[130px] mf:h-[100px] sf:h-[80px] xs:h-[60px]"
+                        src="{{ Vite::asset('resources/img/2_logo/Logo.png') }}" alt="Логотип" />
                 </a>
             </div>
 
@@ -67,16 +68,16 @@
     </nav>
 
     <div class="w-full bg-amber-400">
-        <div class="flex flex-row items-center justify-between mx-5 h-16">
+        <div class="flex flex-row items-center justify-between h-16 mx-5 sf:mx-2">
             <div class="flex items-center justify-end text-white">
-                <div class="text-base leading-normal text-right font-r400">
+                <div class="text-base leading-normal text-right font-r400 sf:hidden">
                     {{ __('м.Кременчук') }}
                 </div>
 
                 <x-modal title="Задайте запитання">
                     <x-slot:button>
                         <x-button @click="modalOpen=true"
-                            class="px-5 py-1.5 ms-4 bg-blue-700 border-none hover:bg-amber-500 uppercase rounded-lg">
+                            class="px-5 py-1.5 ms-4 bg-blue-700 border-none hover:bg-amber-500 uppercase rounded-lg sf:text-xs">
                             {{__('задайте запитання')}}
                         </x-button>
                         </x-slot>

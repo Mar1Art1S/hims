@@ -9,9 +9,8 @@ export default defineConfig({
             refresh: true,
         }),
         tailwindcss(),
-
-
     ],
+
     server: {
         port: 9000 // or any other available port
     }
