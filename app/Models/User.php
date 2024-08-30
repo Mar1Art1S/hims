@@ -16,8 +16,13 @@ class User extends Authenticatable implements FilamentUser
     use HasApiTokens, HasFactory, Notifiable;
     public function canAccessPanel(Panel $panel): bool
     {
-        return str_ends_with($this->email, 'admin@gmail.com') && $this->hasVerifiedEmail();
+        return $this->hasVerifiedEmail() && $this->hasRole('admin');
     }
+    public function hasRole(string $role): bool
+    {
+        return $this->role === $role; // або використовуйте вашу логіку для перевірки ролей
+    }
+
 
     /**
      * The attributes that are mass assignable.
