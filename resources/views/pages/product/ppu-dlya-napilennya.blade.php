@@ -51,4 +51,5 @@ name('prod_ppu_napilennya');
 
         </x-decor.card>
     </x-section>
+
 @endsection
