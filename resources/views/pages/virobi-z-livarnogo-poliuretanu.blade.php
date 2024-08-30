@@ -37,7 +37,7 @@ name('py_pol');
 					ливарний поліуретан використовується для створення декоративних
 					елементів, різноманітних орнаментів та обробки меблів. Він також
 					дозволяє створювати складні форми та деталі, що складаються зі
-					звичайно складних для виготовлення матеріалів. ') }}
+					звичайно складних для виготовлення матеріалів.') }}
 
         </x-slot>
 
@@ -45,11 +45,11 @@ name('py_pol');
     <livewire:search />
 
     <x-section>
-        <x-decor.card>
-            @foreach ($products as $product)
-                <x-product :product="$product" />
-            @endforeach
+{{--        <x-decor.card>--}}
+{{--            @foreach ($products as $product)--}}
+{{--                <x-product :product="$product" />--}}
+{{--            @endforeach--}}
 
-        </x-decor.card>
+{{--        </x-decor.card>--}}
     </x-section>
 @endsection
