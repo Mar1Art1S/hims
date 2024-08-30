@@ -9,10 +9,10 @@
                 class="absolute flex flex-row justify-center items-center -top-[600px] lf:-top-[480px] md:flex-col rg:-top-[500px] tg:-top-[400px] md:-top-[820px] sm:-top-[720px] sf:-top-[620px] xs:-top-[440px]">
                 <div class="flex flex-col justify-center w-2/3 tg:w-1/2 md:w-full">
                     <h1
-                        class="text-[160px] text-white font-r900 leading-[140px] drop-shadow-lg uppercase p-10 text-left rg:text-[100px] rg:leading-[100px] tg:text-[80px] md:text-center md:py-10 sf:text-[60px] sf:leading-[60px] xs:text-[30px] xs:leading-[30px]">
+                        class="text-[140px] text-white font-r900 leading-[140px] drop-shadow-lg uppercase p-10 lf:text-[120px] text-left rg:text-[100px] rg:leading-[100px] tg:text-[80px] md:text-center md:py-10 sf:text-[60px] sf:leading-[60px] xs:text-[30px] xs:leading-[30px]">
                         {{__('Хімічна сировина')}}
                         <span
-                            class=" block text-[55px] text-white font-r700 leading-[60px] drop-shadow-lg uppercase fg:text-[40px] fg:leading-[40px] xs:text-[18px] xs:leading-[30px]">
+                            class=" block text-[45px] text-white font-r700 leading-[60px] drop-shadow-lg uppercase lf:text-[35px] fg:text-[40px] fg:leading-[40px] xs:text-[18px] xs:leading-[30px]">
                             {{__('ВИРОБНИЦТВО ТА ПОСТАЧАННЯ')}} </span>
                     </h1>
                 </div>
@@ -76,8 +76,7 @@
             image="{{ Vite::asset('resources/img/categories/002.jpg') }}" link="{{ route('py_serovine')}}" />
         <x-category title="{{ __('СИРОВИНА ДЛЯ ПОЛІУРЕТАНОВОГО КАМ`ЯНОГО КИЛИМА') }}"
             description="{{ __('Сировина для поліуретанового кам`яного килима включає в себе поліуретанові смоли, наповнювачі (такі як камінь, пісок або ...') }} "
-            image="{{ Vite::asset('resources/img/categories/003.jpg') }}"
-                    link="{{ route('py_kilima')}}" />
+            image="{{ Vite::asset('resources/img/categories/003.jpg') }}" link="{{ route('py_kilima')}}" />
         <x-category title="{{ __('ПОЛІУРЕТАНОВІ КЛЕЇ') }}"
             description="{{ __('Поліуретанові клеї широко використовуються в різних галузях промисловості та ремонту. Вони є дуже міцними та мають широкий спектр застосувань завдяки своїм...') }}"
             image="{{ Vite::asset('resources/img/categories/004.jpg') }}" link="{{ route('py_klei')
